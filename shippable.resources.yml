@@ -49,3 +49,10 @@ resources:
  #   type: replicas
   #  source:
    #   count: 1
+   
+  - name: ghupgrade-ecsplv2
+    type: gitRepo
+    integration: varshaarun-github
+    source:
+      name: "Varsha-Arun/sample-ecsplv2" #you should've access to this project (even if it's public)
+      branch: "upgrade"

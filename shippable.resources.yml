@@ -16,12 +16,12 @@ resources:
       isPull: false
       tag: "deploy.5"
      
-  #- name: ecs-ecscluster1
-   # type: ecsCluster
-    #integration: varsha-ecscluster
-    #source:
-     # name : "testCL" #name of the cluster we are deploying
-      #region: "us-west-2"
+  - name: ecs-ecscluster1
+    type: ecsCluster
+    integration: varsha-ecscluster
+    source:
+      name : "testCL" #name of the cluster we are deploying
+      region: "us-west-2"
       
  # - name: ecs-param1
   #  type: params

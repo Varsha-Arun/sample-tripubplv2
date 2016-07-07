@@ -1,13 +1,8 @@
 jobs:
-  - name: ship-manifest1
+  - name: ecs-manifest1
     type: manifest
     steps:
-      - GET: ship-img1
-      
-  - name: ship-manifest2
-    type: manifest
-    steps:
-      - GET: ship-img2
+      - GET: ecs-img1
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy

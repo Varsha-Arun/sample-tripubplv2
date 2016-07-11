@@ -1,5 +1,5 @@
 triggers:
-  - name: triggertptest1
+  - name: triggertest1
     type: trigger
     source:
       message: 'testing trigger in yml'

@@ -4,7 +4,6 @@ jobs:
     steps:
       - GET: tri-bgtimg1
       - GET: triggerbgt1
-      - PUT: tri-bgtparam2
       
  # - name: tri-bgtdeploy1
   #  type: tripubDeploy

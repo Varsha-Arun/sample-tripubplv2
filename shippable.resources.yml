@@ -21,3 +21,78 @@ resources:
       isPull: false
       tag: "deploy.5"
       
+  - name: tp-img3
+    type: image
+    integration: cock1-hub
+    source:
+      name: "varshaarun/pipeline"
+      isPull: false
+      tag: "deploy.1"
+      
+  - name: tp-img4
+    type: image
+    integration: cock1-hub
+    source:
+      name: "varshaarun/pipeline"
+      isPull: false
+      tag: "deploy.2"
+      
+  - name: tp-param1
+    type: params
+    source:
+      params:
+        api_url : "betaapi.shippable.co"
+        MONGO_API_URL: "localhost:28017"
+        
+  - name: tp-param2
+    type: params
+    source:
+      params:
+        foo: booo
+        api_url: https://api.shippable.co
+        
+  - name: tp-param3
+    type: params
+    source:
+      params:
+        test: beta
+        beta: ship
+        
+  - name: tp-dopt1
+    type: dockerOptions
+    source:
+      memory: 128
+      cpu-shares: 4
+      portMappings:
+        - 80:80
+        
+  - name: tp-dopt2
+    type: dockerOptions
+    source:
+      memory: 64
+      cpu-shares: 8
+      portMappings:
+        - 80:3000
+        
+  - name: tp-dopt3
+    type: dockerOptions
+    source:
+      memory: 252
+      #cpu-shares: 8
+      #portMappings:
+        #- 80:3000
+        
+  - name: tp-replica1
+    type: replicas
+    source:
+      count: 1
+      
+  - name: tp-replica2
+    type: replicas
+    source:
+      count: 2
+      
+  - name: tp-replica3
+    type: replicas
+    source:
+      count: 3

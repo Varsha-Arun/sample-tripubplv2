@@ -1,8 +1,17 @@
 jobs:
-  - name: ecs-manifest1
+  - name: tri-bgmanifest1
     type: manifest
     steps:
-      - GET: ecs-img1
+      - GET: tp-img3
+      - GET: triggerbg1
+      
+  - name: tp-tritondeploybg1
+    type: tripubDeploy
+    options: 
+      deployMethod: bluegreen
+    steps:
+      - GET: tri-bgmanifest1
+      - GET: tp-tpcluster2
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy

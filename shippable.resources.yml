@@ -1,12 +1,11 @@
 resources:
-  - name: tp-tpcluster2
+  - name: tp-tpcluster3
     type: tripubCluster
     integration: varsha-tritonpublic
     source:
       region: "us-east-1"
-      
   
-  - name: tri-img1
+  - name: tri-bgtimg1
     type: image
     integration: cock1-hub
     source:
@@ -14,7 +13,7 @@ resources:
       isPull: false
       tag: "deploy.4"
       
-  - name: tri-img2
+  - name: tri-bgtimg2
     type: image
     integration: cock1-hub
     source:
@@ -22,7 +21,7 @@ resources:
       isPull: false
       tag: "deploy.5"
       
-  - name: tri-img3
+  - name: tri-bgtimg3
     type: image
     integration: cock1-hub
     source:
@@ -30,7 +29,7 @@ resources:
       isPull: false
       tag: "deploy.1"
       
-  - name: tri-img4
+  - name: tri-bgtimg4
     type: image
     integration: cock1-hub
     source:
@@ -38,28 +37,28 @@ resources:
       isPull: false
       tag: "deploy.2"
       
-  - name: tri-param1
+  - name: tri-bgtparam1
     type: params
     source:
       params:
         api_url : "betaapi.shippable.co"
         MONGO_API_URL: "localhost:28017"
         
-  - name: tri-param2
+  - name: tri-bgtparam2
     type: params
     source:
       params:
         foo: booo
         api_url: https://api.shippable.co
         
-  - name: tri-param3
+  - name: tri-bgtparam3
     type: params
     source:
       params:
         test: beta
         beta: ship
         
-  - name: tri-dopt1
+  - name: tri-bgtdopt1
     type: dockerOptions
     source:
       memory: 128
@@ -71,7 +70,7 @@ resources:
       #publishAllPorts assigns a public ip to the container and gives endpoint
       #for accessing the exposed ports.
         
-  - name: tri-dopt2
+  - name: tri-bgtdopt2
     type: dockerOptions
     source:
       memory: 200
@@ -83,7 +82,7 @@ resources:
       #publishAllPorts assigns a public ip to the container and gives endpoint
       #for accessing the exposed ports.
         
-  - name: tri-dopt3
+  - name: tri-bgtdopt3
     type: dockerOptions
     source:
       source:
@@ -96,17 +95,17 @@ resources:
       #publishAllPorts assigns a public ip to the container and gives endpoint
       #for accessing the exposed ports.
         
-  - name: tri-replica1
+  - name: tri-bgtreplica1
     type: replicas
     source:
       count: 1
       
-  - name: tp-replica2
+  - name: tp-bgtreplica2
     type: replicas
     source:
       count: 2
       
-  - name: tri-replica3
+  - name: tri-bgtreplica3
     type: replicas
     source:
       count: 3

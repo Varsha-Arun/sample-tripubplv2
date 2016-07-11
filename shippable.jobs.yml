@@ -1,8 +1,8 @@
 jobs:
-  - name: ecs-manifest1
+  - name: tp-manifest1
     type: manifest
     steps:
-      - GET: ecs-img1
+      - GET: tp-img2
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy

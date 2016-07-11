@@ -96,3 +96,8 @@ resources:
     type: replicas
     source:
       count: 3
+
+  - name: tp-replica4
+    type: replicas
+    source:
+      count: 4

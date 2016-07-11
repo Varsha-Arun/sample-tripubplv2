@@ -5,6 +5,7 @@ jobs:
       - GET: tri-img3
       - GET: triggerbg1
       - GET: tri-param2
+      - GET: tri-dopt1
       
   - name: tp-tritondeploybg1
     type: tripubDeploy

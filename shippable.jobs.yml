@@ -6,7 +6,7 @@ jobs:
       - GET: triggertest1
      
   - name: tp-testdeploy1
-    type: ecsDeploy
+    type: tripubDeploy
     steps:
       - GET: tptest-tpcluster
       - GET: tp-manifest1

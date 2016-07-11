@@ -5,11 +5,11 @@ jobs:
       - GET: tp-img2
       - GET: triggertest1
      
-  - name: tp-testdeploy1
-    type: tripubDeploy
-    steps:
-      - GET: tptest-tpcluster
-      - GET: tp-manifest1
+ # - name: tp-testdeploy1
+  #  type: tripubDeploy
+   # steps:
+    #  - GET: tptest-tpcluster
+     # - GET: tp-manifest1
     
   #- name: repo-dcldeploy
    # type: dclDeploy

@@ -4,6 +4,9 @@ jobs:
     steps:
       - GET: tri-img2
       - GET: tgrtest1
+      - GET: tp-param1
+      - GET: tp-dopt1
+      - GET: tp-replica2
      
   - name: tp-testdeploy1
     type: tripubDeploy

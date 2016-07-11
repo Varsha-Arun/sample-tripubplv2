@@ -1,8 +1,8 @@
 jobs:
-  - name: tp-manifest1
+  - name: tri-manifest1
     type: manifest
     steps:
-      - GET: tp-img2
+      - GET: tri-img2
       - GET: tgrtest1
      
  # - name: tp-testdeploy1

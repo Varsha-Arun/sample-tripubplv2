@@ -5,13 +5,13 @@ jobs:
       - GET: tri-bgtimg1
       - GET: triggerbgt1
       
- # - name: tri-bgtdeploy1
-  #  type: tripubDeploy
-   # options: 
-    #  deployMethod: bluegreen
-    #steps:
-     # - GET: tri-bgmanifest1
-      #- GET: tp-tpcluster2
+  - name: tri-bgtdeploy1
+    type: tripubDeploy
+    options: 
+      deployMethod: bluegreen
+    steps:
+      - GET: tri-bgtmanifest1
+      - GET: tp-tpcluster3
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy

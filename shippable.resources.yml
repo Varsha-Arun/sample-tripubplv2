@@ -62,25 +62,37 @@ resources:
     type: dockerOptions
     source:
       memory: 128
-      cpu-shares: 4
-      portMappings:
-        - 80:80
+      #Triton has standard values for memory 128,512 etc.
+      #If non standard values is given in the memory, it chooses the closest
+      #standard memory value. Triton also uses this value to choose the plan
+      #and cpu-shares
+      publishAllPorts : true
+      #publishAllPorts assigns a public ip to the container and gives endpoint
+      #for accessing the exposed ports.
         
   - name: tp-dopt2
-    type: dockerOptions
     source:
-      memory: 64
-      cpu-shares: 8
-      portMappings:
-        - 80:3000
+      memory: 200
+      #Triton has standard values for memory 128,512 etc.
+      #If non standard values is given in the memory, it chooses the closest
+      #standard memory value. Triton also uses this value to choose the plan
+      #and cpu-shares
+      publishAllPorts : false
+      #publishAllPorts assigns a public ip to the container and gives endpoint
+      #for accessing the exposed ports.
         
   - name: tp-dopt3
     type: dockerOptions
     source:
-      memory: 252
-      #cpu-shares: 8
-      #portMappings:
-        #- 80:3000
+      source:
+      memory: 12
+      #Triton has standard values for memory 128,512 etc.
+      #If non standard values is given in the memory, it chooses the closest
+      #standard memory value. Triton also uses this value to choose the plan
+      #and cpu-shares
+      publishAllPorts : true
+      #publishAllPorts assigns a public ip to the container and gives endpoint
+      #for accessing the exposed ports.
         
   - name: tp-replica1
     type: replicas

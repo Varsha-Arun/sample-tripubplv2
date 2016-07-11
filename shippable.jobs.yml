@@ -3,6 +3,7 @@ jobs:
     type: manifest
     steps:
       - GET: tp-img1
+      - GET: triggertptest1
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy

@@ -2,7 +2,7 @@ triggers:
   - name: triggerbg1
     type: trigger
     source:
-      message: 'testing trigger jobs in jobs.yml'
+      message: 'testing jobs in jobs.yml'
       
   - name: triggerbg2
     type: trigger

@@ -71,6 +71,7 @@ resources:
       #for accessing the exposed ports.
         
   - name: tp-dopt2
+    type: dockerOptions
     source:
       memory: 200
       #Triton has standard values for memory 128,512 etc.

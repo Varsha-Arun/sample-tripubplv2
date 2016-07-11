@@ -2,7 +2,7 @@ jobs:
   - name: tri-bgmanifest1
     type: manifest
     steps:
-      - GET: tp-img3
+      - GET: tri-img3
       - GET: triggerbg1
       
   - name: tp-tritondeploybg1

@@ -4,11 +4,12 @@ jobs:
     steps:
       - GET: tp-img2
      
-#  - name: repo-ecsdeploy
- #   type: ecsDeploy
-  #  steps:
-   #   - GET: repo-manifest2
-    #  - GET: repo-ecscluster
+  - name: tp-testdeploy1
+    type: ecsDeploy
+    steps:
+      - GET: tptest-tpcluster
+      - GET: tp-manifest1
+      - GET: triggertptest1
     
   #- name: repo-dcldeploy
    # type: dclDeploy

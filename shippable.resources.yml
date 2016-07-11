@@ -29,6 +29,14 @@ resources:
       isPull: false
       tag: "deploy.1"
       
+  - name: tp-img4
+    type: image
+    integration: cock1-hub
+    source:
+      name: "varshaarun/pipeline"
+      isPull: false
+      tag: "deploy.2"
+      
   - name: tp-param1
     type: params
     source:

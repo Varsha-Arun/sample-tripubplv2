@@ -10,7 +10,6 @@ jobs:
     steps:
       - GET: tptest-tpcluster
       - GET: tp-manifest1
-      - GET: triggertptest1
     
   #- name: repo-dcldeploy
    # type: dclDeploy

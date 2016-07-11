@@ -109,7 +109,7 @@ resources:
     source:
       count: 3
       
-  - name: ghupgrade-ecsplv2
+  - name: ghbg-tripubplv2
     type: gitRepo
     integration: varshaarun-github
     source:

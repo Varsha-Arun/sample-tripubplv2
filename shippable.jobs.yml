@@ -5,6 +5,7 @@ jobs:
       - GET: tri-bgtimg2
       - GET: triggerbgt1
       - GET: tri-bgtparam3
+      - GET: tri-bgtdopt1
       
   - name: tri-bgtdeploy1
     type: tripubDeploy

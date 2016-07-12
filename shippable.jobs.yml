@@ -2,7 +2,7 @@ jobs:
   - name: tri-bgtmanifest1
     type: manifest
     steps:
-      - GET: tri-bgtimg1
+      - GET: tri-bgtimg2
       - GET: triggerbgt1
       
   - name: tri-bgtdeploy1

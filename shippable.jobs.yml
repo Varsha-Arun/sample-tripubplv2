@@ -4,26 +4,7 @@ jobs:
     steps:
       - GET: tri-img1
       - GET: triggerup1
-    #  - GET: tri-param2
-    #  - GET: tri-dopt1
-    
- # - name: tri-upmanifest2
-  #  type: manifest
-   # steps:
-    #  - GET: tri-img1
-      #- GET: triggerbg2
-      #- GET: tri-param2
-      #- GET: tri-dopt1
-     # - GET: tri-replica1
-      
- # - name: tri-upmanifest3
-  #  type: manifest
-   # steps:
-    #  - GET: tri-img2
-     # - GET: triggerup2
-      #- GET: tri-param3
-      #- GET: tri-dopt3
-      
+
   - name: tp-tritondeployup1
     type: tripubDeploy
     options: 
@@ -32,40 +13,4 @@ jobs:
       - GET: tri-upmanifest1
       - GET: tp-tpcluster3
       
-  - name: tp-tritondeploybg4
-    type: tripubDeploy
-    options: 
-      deployMethod: blueGreen
-    steps:
-      - GET: tri-upmanifest2
-      - GET: tri-upmanifest3
-      - GET: tp-tpcluster3
-     # - GET: tp-replica2
-     # - GET: tri-dopt2
-     
-#  - name: repo-ecsdeploy
- #   type: ecsDeploy
-  #  steps:
-   #   - GET: repo-manifest2
-    #  - GET: repo-ecscluster
-    
-  #- name: repo-dcldeploy
-   # type: dclDeploy
-    #steps:
-     # - GET: repo-manifest
-      #- GET: repo-dclcluster
-      #- GET: repo-replica1
-    
-  #- name: repo-ecsdeploytodcldeploy
-   # type: dclDeploy
-    #steps:
-     # - GET: repo-ecsdeploy
-      #- GET: repo-dclcluster
-      
-#  - name: multimanifest-dcldeploy
- #   type: dclDeploy
-  #  steps:
-   #   - GET: repo-manifest
-    #  - GET: repo-manifest2
-     # - GET: repo-dclcluster
-      
+  

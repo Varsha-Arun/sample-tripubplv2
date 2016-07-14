@@ -10,7 +10,7 @@ jobs:
   - name: tp-tritondeploybg1
     type: tripubDeploy
     options: 
-      deployMethod: bluegreen
+      deployMethod: blueGreen
     steps:
       - GET: tri-bgmanifest1
       - GET: tp-tpcluster2

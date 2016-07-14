@@ -2,11 +2,11 @@ jobs:
   - name: tri-upmanifest1
     type: manifest
     steps:
-      - GET: tri-upimg1
+      - GET: tri-upimg2
       - GET: triggerup1
-      - GET: tri-upparam1
-      - GET: tri-updopt1
-      - GET: tp-upreplica2
+      - GET: tri-upparam2
+      - GET: tri-updopt2
+      - GET: tp-upreplica1
 
   - name: tp-tritondeployup1
     type: tripubDeploy

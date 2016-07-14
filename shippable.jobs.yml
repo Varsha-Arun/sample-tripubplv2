@@ -11,7 +11,7 @@ jobs:
     type: manifest
     steps:
       - GET: tri-img1
-      - GET: triggerbg2
+      #- GET: triggerbg2
       #- GET: tri-param2
       #- GET: tri-dopt1
       - GET: tri-replica1

@@ -67,7 +67,7 @@ resources:
         
   - name: tri-param3
     type: params
-    source:
+    pointer:
       params:
         test: beta
         beta: ship

@@ -33,6 +33,15 @@ resources:
     initialVersion:
       versionName: "deploy.1"
       
+  - name: tri-img3
+    type: image
+    integration: cock1-hub
+    pointer:
+      sourceName: "varshaarun/pipeline"
+      isPull: false
+    initialVersion:
+      versionName: "deploy.1"
+      
   - name: tri-img4
     type: image
     integration: cock1-hub
@@ -50,6 +59,15 @@ resources:
       isPull: false
     initialVersion:
       versionName: "nodeenv"
+      
+  - name: tri-img6
+    type: image
+    integration: cock1-hub
+    pointer:
+      sourceName: "varshaarun/test"
+      isPull: false
+    initialVersion:
+      versionName: "deploy.1"
       
   - name: tri-param1
     type: params

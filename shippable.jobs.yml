@@ -5,7 +5,7 @@ jobs:
       - GET: tri-upimg1
       - GET: triggerup1
       - GET: tri-upparam2
-      - GET: tri-updopt3
+      - GET: tri-updopt2
       - GET: tp-upreplica1
 
   - name: tp-tritondeployup1

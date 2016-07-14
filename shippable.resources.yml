@@ -27,7 +27,7 @@ resources:
   - name: tri-img3
     type: image
     integration: cock1-hub
-    source:
+    pointer:
       sourceName: "varshaarun/pipeline"
       isPull: false
     initialVersion:
@@ -36,7 +36,7 @@ resources:
   - name: tri-img4
     type: image
     integration: cock1-hub
-    source:
+    pointer:
       sourceName: "varshaarun/pipeline"
       isPull: false
     initialVersion:

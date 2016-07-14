@@ -67,7 +67,7 @@ resources:
         
   - name: tri-upparam3
     type: params
-    source:
+    pointer:
       params:
         test: beta
         beta: ship

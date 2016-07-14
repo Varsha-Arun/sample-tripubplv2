@@ -6,6 +6,12 @@ jobs:
       - GET: triggerbg1
     #  - GET: tri-param2
     #  - GET: tri-dopt1
+    
+  - name: tri-bgmanifest2
+    type: manifest
+    steps:
+      - GET: tri-img1
+      - GET: triggerbg2
       
   - name: tp-tritondeploybg1
     type: tripubDeploy
@@ -14,6 +20,14 @@ jobs:
     steps:
       - GET: tri-bgmanifest1
       - GET: tp-tpcluster2
+      
+  - name: tp-tritondeploybg2
+    type: tripubDeploy
+    options: 
+      deployMethod: blueGreen
+    steps:
+      - GET: tri-bgmanifest2
+      - GET: tp-tpcluster2  
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy

@@ -32,7 +32,7 @@ jobs:
       - GET: tri-bgmanifest1
       - GET: tp-tpcluster2
       
-  - name: tp-tritondeploybg2
+  - name: tp-tritondeploybg3
     type: tripubDeploy
     options: 
       deployMethod: blueGreen

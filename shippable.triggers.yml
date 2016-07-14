@@ -7,7 +7,7 @@ triggers:
   - name: triggerbg2
     type: trigger
     pointer:
-      counter: 11
+      counter: 12
       
   - name: triggerbg3
     type: trigger

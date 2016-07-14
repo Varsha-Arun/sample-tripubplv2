@@ -106,29 +106,16 @@ jobs:
       - GET: tri-bgmanifest7
       - GET: tp-tpcluster2
      
-#  - name: repo-ecsdeploy
- #   type: ecsDeploy
-  #  steps:
-   #   - GET: repo-manifest2
-    #  - GET: repo-ecscluster
-    
-  #- name: repo-dcldeploy
-   # type: dclDeploy
-    #steps:
-     # - GET: repo-manifest
-      #- GET: repo-dclcluster
-      #- GET: repo-replica1
-    
-  #- name: repo-ecsdeploytodcldeploy
-   # type: dclDeploy
-    #steps:
-     # - GET: repo-ecsdeploy
-      #- GET: repo-dclcluster
+  - name: tri-upmanifest1
+    type: manifest
+    steps:
+      - GET: tri-img1
+      - GET: triggerup1
       
-#  - name: multimanifest-dcldeploy
- #   type: dclDeploy
-  #  steps:
-   #   - GET: repo-manifest
-    #  - GET: repo-manifest2
-     # - GET: repo-dclcluster
-      
+  - name: tp-uptritondeploy1
+    type: tripubDeploy
+    options: 
+      deployMethod: upgrade
+    steps:
+      - GET: tri-upmanifest1
+      - GET: tp-tpcluster2

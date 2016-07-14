@@ -43,7 +43,7 @@ jobs:
      # - GET: tp-replica2
      # - GET: tri-dopt2
 
-  - name: tp-tritondeploybg5
+  - name: tp-tritondeploybg6
     type: tripubDeploy
     options: 
       deployMethod: blueGreen
@@ -53,6 +53,7 @@ jobs:
       - GET: tp-tpcluster2
      # - GET: tp-replica2
      # - GET: tri-dopt2
+     
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy
   #  steps:

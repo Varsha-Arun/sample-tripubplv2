@@ -23,3 +23,18 @@ triggers:
     type: trigger
     pointer:
       counter: 2
+      
+  - name: triggerup1
+    type: trigger
+    pointer:
+      message: 'test triggering job in jobs.yml'
+      
+  - name: triggerup2
+    type: trigger
+    pointer:
+      counter: 1
+      
+  - name: triggerup3
+    type: trigger
+    pointer:
+      counter: 1

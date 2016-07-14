@@ -2,7 +2,7 @@ jobs:
   - name: tri-upmanifest1
     type: manifest
     steps:
-      - GET: tri-upimg2
+      - GET: tri-upimg1
       - GET: triggerup1
       - GET: tri-upparam2
       - GET: tri-updopt3

@@ -22,4 +22,4 @@ triggers:
   - name: triggerbg5
     type: trigger
     pointer:
-      counter: 1
+      counter: 2

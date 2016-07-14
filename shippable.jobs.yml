@@ -29,12 +29,14 @@ jobs:
     steps:
       - GET: tri-img1
       - GET: triggerbg3
+      - GET: tri-dopt1
       
   - name: tri-bgmanifest5
     type: manifest
     steps:
       - GET: tri-img2
       - GET: triggerbg3
+      - GET: tri-dopt2
       
   - name: tp-tritondeploybg1
     type: tripubDeploy

@@ -2,52 +2,56 @@ resources:
   - name: tp-tpcluster2
     type: tripubCluster
     integration: varsha-tritonpublic
-    source:
+    pointer:
       region: "us-east-1"
       
   
   - name: tri-img1
     type: image
     integration: cock1-hub
-    source:
-      name: "shiphitchcock1/betaci_nod_limitless_pl"
+    pointer:
+      sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
       isPull: false
-      tag: "deploy.4"
+    initialVersion:
+      versionName: "deploy.4"
       
   - name: tri-img2
     type: image
     integration: cock1-hub
-    source:
-      name: "shiphitchcock1/betaci_nod_limitless_pl"
+    pointer:
+      sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
       isPull: false
-      tag: "deploy.5"
+    initialVersion:
+      versionName: "deploy.5"
       
   - name: tri-img3
     type: image
     integration: cock1-hub
     source:
-      name: "varshaarun/pipeline"
+      sourceName: "varshaarun/pipeline"
       isPull: false
-      tag: "deploy.1"
+    initialVersion:
+      versionName: "deploy.1"
       
   - name: tri-img4
     type: image
     integration: cock1-hub
     source:
-      name: "varshaarun/pipeline"
+      sourceName: "varshaarun/pipeline"
       isPull: false
-      tag: "deploy.2"
+    initialVersion:
+      versionName: "deploy.2"
       
   - name: tri-param1
     type: params
-    source:
+    pointer:
       params:
         api_url : "betaapi.shippable.co"
         MONGO_API_URL: "localhost:28017"
         
   - name: tri-param2
     type: params
-    source:
+    pointer:
       params:
         foo: booo
         api_url: https://api.shippable.co
@@ -61,7 +65,7 @@ resources:
         
   - name: tri-dopt1
     type: dockerOptions
-    source:
+    pointer:
       memory: 128
       #Triton has standard values for memory 128,512 etc.
       #If non standard values is given in the memory, it chooses the closest
@@ -73,7 +77,7 @@ resources:
         
   - name: tri-dopt2
     type: dockerOptions
-    source:
+    pointer:
       memory: 200
       #Triton has standard values for memory 128,512 etc.
       #If non standard values is given in the memory, it chooses the closest
@@ -85,8 +89,7 @@ resources:
         
   - name: tri-dopt3
     type: dockerOptions
-    source:
-      source:
+    pointer:
       memory: 12
       #Triton has standard values for memory 128,512 etc.
       #If non standard values is given in the memory, it chooses the closest
@@ -98,7 +101,7 @@ resources:
         
   - name: tri-replica1
     type: replicas
-    source:
+    pointer:
       count: 1
       
   - name: tp-replica2
@@ -108,7 +111,7 @@ resources:
       
   - name: tri-replica3
     type: replicas
-    source:
+    pointer:
       count: 3
    
 #  - name: ghupgrade-ecsplv2

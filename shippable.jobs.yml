@@ -32,6 +32,7 @@ jobs:
       - GET: tri-bgmanifest2
       - GET: tp-tpcluster2
       - GET: tp-replica2
+      - GET: tri-dopt2
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy

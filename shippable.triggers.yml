@@ -1,15 +1,15 @@
 triggers:
   - name: triggerbg1
     type: trigger
-    source:
+    pointer:
       message: 'testing jobs in jobs.yml'
       
   - name: triggerbg2
     type: trigger
-    source:
+    pointer:
       counter: 1
       
   - name: triggerbg3
     type: trigger
-    source:
+    pointer:
       counter: 1

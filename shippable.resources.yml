@@ -42,6 +42,15 @@ resources:
     initialVersion:
       versionName: "deploy.2"
       
+  - name: tri-img5
+    type: image
+    integration: cock1-hub
+    pointer:
+      sourceName: "scriptnull/busybox"
+      isPull: false
+    initialVersion:
+      versionName: "nodeenv"
+      
   - name: tri-param1
     type: params
     pointer:

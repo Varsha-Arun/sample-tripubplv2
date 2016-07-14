@@ -13,3 +13,8 @@ triggers:
     type: trigger
     pointer:
       counter: 4
+      
+  - name: triggerbg4
+    type: trigger
+    pointer:
+      counter: 1

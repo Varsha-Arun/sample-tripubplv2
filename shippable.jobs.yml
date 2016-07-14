@@ -10,7 +10,7 @@ jobs:
   - name: tri-bgmanifest2
     type: manifest
     steps:
-      - GET: tri-img5
+      - GET: tri-img1
       - GET: triggerbg2
       - GET: tri-param2
       - GET: tri-dopt1
@@ -32,7 +32,7 @@ jobs:
       - GET: tp-tpcluster2
       - GET: tri-param1
       - GET: tri-dopt2
-      - GET: tri-img1
+      
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy

@@ -34,6 +34,7 @@ jobs:
     type: manifest
     steps:
       - GET: tri-img2
+      - GET: triggerbg3
       
   - name: tp-tritondeploybg1
     type: tripubDeploy

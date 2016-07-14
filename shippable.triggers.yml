@@ -1,15 +1,15 @@
 triggers:
-  - name: triggerbg1
+  - name: triggerup1
     type: trigger
     pointer:
       message: 'test triggering jobssss in jobs.yml'
       
-  - name: triggerbg2
+  - name: triggerup2
     type: trigger
     pointer:
       counter: 18
       
-  - name: triggerbg3
+  - name: triggerup3
     type: trigger
     pointer:
       counter: 1

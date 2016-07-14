@@ -31,7 +31,7 @@ jobs:
     steps:
       - GET: tri-bgmanifest2
       - GET: tp-tpcluster2
-      
+      - GET: tp-replica2
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy

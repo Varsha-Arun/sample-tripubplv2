@@ -43,7 +43,7 @@ jobs:
     steps:
       - GET: tri-img2
       - GET: tri-img1
-      - GET: triggerbg3
+      - GET: triggerbg4
       
   - name: tp-tritondeploybg1
     type: tripubDeploy

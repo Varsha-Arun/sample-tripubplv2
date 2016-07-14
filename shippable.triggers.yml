@@ -18,3 +18,8 @@ triggers:
     type: trigger
     pointer:
       counter: 2
+      
+  - name: triggerbg5
+    type: trigger
+    pointer:
+      counter: 1

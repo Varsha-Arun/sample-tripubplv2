@@ -4,6 +4,9 @@ jobs:
     steps:
       - GET: tri-upimg1
       - GET: triggerup1
+      - GET: tri-upparam1
+      - GET: tri-updopt1
+      - GET: tp-upreplica2
 
   - name: tp-tritondeployup1
     type: tripubDeploy

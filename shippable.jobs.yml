@@ -10,10 +10,10 @@ jobs:
   - name: tri-bgmanifest2
     type: manifest
     steps:
-      - GET: tri-img1
+      - GET: tri-img5
       - GET: triggerbg2
-      - GET: tri-param2
-      - GET: tri-dopt1
+      - GET: tri-param1
+      - GET: tri-dopt2
       
   - name: tp-tritondeploybg1
     type: tripubDeploy

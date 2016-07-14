@@ -115,7 +115,7 @@ resources:
       
   - name: tp-replica2
     type: replicas
-    source:
+    pointer:
       count: 2
       
   - name: tri-replica3

@@ -1,12 +1,12 @@
 resources:
-  - name: tp-tpcluster2
+  - name: tp-tpcluster3
     type: tripubCluster
     integration: varsha-tritonpublic
     pointer:
       region: "us-east-1"
       
   
-  - name: tri-img1
+  - name: tri-upimg1
     type: image
     integration: cock1-hub
     pointer:
@@ -15,7 +15,7 @@ resources:
     initialVersion:
       versionName: "deploy.4"
       
-  - name: tri-img2
+  - name: tri-upimg2
     type: image
     integration: cock1-hub
     pointer:
@@ -24,7 +24,7 @@ resources:
     initialVersion:
       versionName: "deploy.5"
       
-  - name: tri-img3
+  - name: tri-upimg3
     type: image
     integration: cock1-hub
     pointer:
@@ -33,7 +33,7 @@ resources:
     initialVersion:
       versionName: "deploy.1"
       
-  - name: tri-img4
+  - name: tri-upimg4
     type: image
     integration: cock1-hub
     pointer:
@@ -42,7 +42,7 @@ resources:
     initialVersion:
       versionName: "deploy.2"
       
-  - name: tri-img5
+  - name: tri-upimg5
     type: image
     integration: cock1-hub
     pointer:
@@ -51,28 +51,28 @@ resources:
     initialVersion:
       versionName: "nodeenv"
       
-  - name: tri-param1
+  - name: tri-upparam1
     type: params
     pointer:
       params:
         api_url : "betaapi.shippable.co"
         MONGO_API_URL: "localhost:28017"
         
-  - name: tri-param2
+  - name: tri-upparam2
     type: params
     pointer:
       params:
         foo: booo
         api_url: https://api.shippable.co
         
-  - name: tri-param3
+  - name: tri-upparam3
     type: params
     source:
       params:
         test: beta
         beta: ship
         
-  - name: tri-dopt1
+  - name: tri-updopt1
     type: dockerOptions
     pointer:
       memory: 128
@@ -84,7 +84,7 @@ resources:
       #publishAllPorts assigns a public ip to the container and gives endpoint
       #for accessing the exposed ports.
         
-  - name: tri-dopt2
+  - name: tri-updopt2
     type: dockerOptions
     pointer:
       memory: 200
@@ -96,7 +96,7 @@ resources:
       #publishAllPorts assigns a public ip to the container and gives endpoint
       #for accessing the exposed ports.
         
-  - name: tri-dopt3
+  - name: tri-updopt3
     type: dockerOptions
     pointer:
       memory: 12
@@ -108,17 +108,17 @@ resources:
       #publishAllPorts assigns a public ip to the container and gives endpoint
       #for accessing the exposed ports.
         
-  - name: tri-replica1
+  - name: tri-upreplica1
     type: replicas
     pointer:
       count: 1
       
-  - name: tp-replica2
+  - name: tp-upreplica2
     type: replicas
     pointer:
       count: 2
       
-  - name: tri-replica3
+  - name: tri-upreplica3
     type: replicas
     pointer:
       count: 3

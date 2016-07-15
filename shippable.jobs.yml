@@ -2,11 +2,8 @@ jobs:
   - name: tri-upmanifest1
     type: manifest
     steps:
-      - GET: tri-upimg5
+      - GET: tri-upimg2
       - GET: triggerup1
-      - GET: tri-upparam2
-      - GET: tri-updopt2
-      - GET: tp-upreplica1
       
   - name: tri-upmanifest2
     type: manifest
@@ -17,6 +14,12 @@ jobs:
       - GET: tri-updopt2
       - GET: tp-upreplica2
       - GET: triggerup2
+      
+  - name: tri-upmanifest3
+    type: manifest
+    steps:
+      - GET: tri-upimg1
+      #- GET: triggerup1
 
   - name: tp-tritondeployup2
     type: tripubDeploy
@@ -26,3 +29,11 @@ jobs:
       - GET: tri-upmanifest2
       - GET: tp-tpcluster3
       - GET: tri-upreplica1
+      
+  - name: tp-tritondeployup3
+    type: tripubDeploy
+    options: 
+      deployMethod: upgrade
+    steps:
+      - GET: tri-upmanifest3
+      - GET: tp-tpcluster3

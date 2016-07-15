@@ -12,6 +12,7 @@ jobs:
     type: manifest
     steps:
       - GET: tri-upimg5
+      - GET: tri-upimg1
       - GET: tri-upparam2
       - GET: tri-updopt2
       - GET: tp-upreplica2

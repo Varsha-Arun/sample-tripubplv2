@@ -14,7 +14,7 @@ jobs:
       - GET: tri-upimg1
       - GET: triggerup2
 
-  - name: tp-tritondeployup1
+  - name: tp-tritondeployup2
     type: tripubDeploy
     options: 
       deployMethod: upgrade

@@ -11,10 +11,10 @@ jobs:
   - name: tri-upmanifest2
     type: manifest
     steps:
-      - GET: tri-upimg1
-      - GET: tri-upparam1
-     # - GET: tri-updopt1
-      - GET: tri-upreplica1
+      - GET: tri-upimg5
+      - GET: tri-upparam2
+      - GET: tri-updopt2
+      - GET: tp-upreplica2
       - GET: triggerup2
 
   - name: tp-tritondeployup2

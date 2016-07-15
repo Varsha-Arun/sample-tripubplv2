@@ -12,6 +12,9 @@ jobs:
     type: manifest
     steps:
       - GET: tri-upimg1
+      - GET: tri-upparam1
+      - GET: tri-updopt1
+      - GET: tri-upreplica1
       - GET: triggerup2
 
   - name: tp-tritondeployup2

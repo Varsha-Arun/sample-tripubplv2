@@ -11,7 +11,7 @@ jobs:
   - name: tri-upmanifest2
     type: manifest
     steps:
-      - GET: tri-upimg5
+      - GET: tri-upimg2
       - GET: tri-upimg1
       - GET: tri-upparam2
       - GET: tri-updopt2
@@ -25,6 +25,4 @@ jobs:
     steps:
       - GET: tri-upmanifest2
       - GET: tp-tpcluster3
-      - GET: tri-upparam1
-      - GET: tri-updopt1
       - GET: tri-upreplica1

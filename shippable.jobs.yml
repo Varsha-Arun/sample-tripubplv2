@@ -24,3 +24,6 @@ jobs:
     steps:
       - GET: tri-upmanifest2
       - GET: tp-tpcluster3
+      - GET: tri-upparam1
+      - GET: tri-updopt1
+      - GET: tri-upreplica1

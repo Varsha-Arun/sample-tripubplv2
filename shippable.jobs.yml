@@ -19,6 +19,7 @@ jobs:
     type: manifest
     steps:
       - GET: tri-upimg1
+      - GET: tri-upmanifest1
       #- GET: triggerup1
 
   - name: tp-tritondeployup2
